@@ -30,6 +30,6 @@ Organizzare i singoli membri in card/schede
 1. Attraverso l'array con un ciclo for. All'interno definirò un secondo ciclo for per stampare ogni proprietà degli oggetti. Faccio un console log.
 
 ## MILESTONE 2:
-2. Nel ciclo for dell'array creo degli elementi html div quanti sono gli oggetti. 
+2. Nel ciclo for dell'array creo degli elementi html div quanti sono gli oggetti. Aggiungo i div nel body.
 
 3. Nel ciclo for degli oggetti creo degli elementi html che aggiungo all'interno dei div, e assegno tramite interpolazione le stringhe di informazioni. 
