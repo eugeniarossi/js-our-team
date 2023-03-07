@@ -37,10 +37,24 @@ const team = [
 // Stampo in console l'array team
 console.log({team});
 
-// Stampo in console le proprietà di ogni oggetto contenuto nell'array
+const container = document.getElementById('container');
+const fragment = document.createDocumentFragment();
+
+// Stampo in console e in pagina le proprietà di ogni oggetto contenuto nell'array
 for (let i = 0; i < team.length; i++) {
     console.log(`${i + 1} member:`);
+    
+    const newDiv = document.createElement('div');
+    const newHeading = document.createElement('h2');
+    newHeading.innerText = (`${i + 1} member:`);
+    newDiv.append(newHeading);
+
     for (let key in team[i]) {
         console.log(`${key}: ${team[i][key]}`);
+        const newP = document.createElement('p');
+        newP.innerText = (`${key}: ${team[i][key]}`);
+        newDiv.append(newP);
     }
+    fragment.append(newDiv);
+    container.append(fragment);
 }
