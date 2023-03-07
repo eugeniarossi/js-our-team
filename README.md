@@ -47,4 +47,4 @@ Organizzare i singoli membri in card/schede
 
 ### BONUS 2:
 
-7. 
+7. Aggiungo uno stile alla pagina e agli elementi html generati nel ciclo for.
