@@ -56,9 +56,21 @@ for (let i = 0; i < team.length; i++) {
             newP.innerText = (`${key}: ${team[i][key]}`);
             newDiv.append(newP);
         } else {
-            const newImg = ``;
+            const newImg = `<img src="img/${team[i][key]}" alt="profile picture">`;
+            newDiv.innerHTML += newImg;
+            console.log(newImg);
         }
     }
     fragment.append(newDiv);
     container.append(fragment);
 }
+/*
+if (key !== 'profile-picture') {
+    console.log(`${key}: ${team[i][key]}`);
+    const newP = document.createElement('p');
+    newP.innerText = (`${key}: ${team[i][key]}`);
+    newDiv.append(newP);
+} else {
+    const newImg = `<img src="img/${team[i][key]}" alt="profile picture">`;
+    newDiv.append(newImg);
+}*/
