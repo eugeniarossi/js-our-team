@@ -1,0 +1,30 @@
+body {
+    background-color: #f5f5f1;
+}
+
+h5 {
+    color: #2e2e2e;
+}
+
+#cards-container article {
+    background-color: white;
+}
+
+#cards-container article p:first-child {
+    padding-top: 1.5625rem;
+    font-family: 'Merienda One', cursive;
+    font-size: large;
+}
+
+#cards-container article:hover {
+    transform: scale(1.1);
+}
+
+#cards-container article p {
+    color: #69635d;
+}
+
+#cards-container article img {
+    width: 100%;
+    display: block;
+}

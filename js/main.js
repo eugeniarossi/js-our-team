@@ -9,24 +9,27 @@ function show() {
     for (let i = 0; i < team.length; i++) {
         console.log(`${i + 1} member:`);
 
+        const newCol = document.createElement('div');
+        newCol.classList.add('col-9', 'col-md-5', 'col-lg-4', 'my-4', 'px-4', 'text-center');
+        const newArticle = document.createElement('article');
+        newArticle.classList.add('d-flex', 'flex-column')
+        newCol.append(newArticle);
         const newDiv = document.createElement('div');
-        const newHeading = document.createElement('h2');
-        newHeading.innerText = (`${i + 1} member:`);
-        newDiv.append(newHeading);
 
         for (let key in team[i]) {
             if (key !== 'profile-picture') {
                 console.log(`${key}: ${team[i][key]}`);
                 const newP = document.createElement('p');
-                newP.innerText = (`${key}: ${team[i][key]}`);
+                newP.innerText = team[i][key];
                 newDiv.append(newP);
             } else {
                 const newImg = `<img src="img/${team[i][key]}" alt="profile picture">`;
-                newDiv.innerHTML += newImg;
+                newArticle.innerHTML += newImg;
                 console.log(newImg);
             }
         }
-        fragment.append(newDiv);
+        newArticle.append(newDiv);
+        fragment.append(newCol);
         container.append(fragment);
     }
 }
@@ -72,7 +75,7 @@ const team = [
 // Stampo in console l'array team
 console.log({ team });
 // Salvo il container in una variabile
-const container = document.getElementById('container');
+const container = document.getElementById('cards-container');
 // Creo un document fragment
 const fragment = document.createDocumentFragment();
 
