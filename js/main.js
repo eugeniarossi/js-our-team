@@ -50,10 +50,14 @@ for (let i = 0; i < team.length; i++) {
     newDiv.append(newHeading);
 
     for (let key in team[i]) {
-        console.log(`${key}: ${team[i][key]}`);
-        const newP = document.createElement('p');
-        newP.innerText = (`${key}: ${team[i][key]}`);
-        newDiv.append(newP);
+        if (key !== 'profile-picture') {
+            console.log(`${key}: ${team[i][key]}`);
+            const newP = document.createElement('p');
+            newP.innerText = (`${key}: ${team[i][key]}`);
+            newDiv.append(newP);
+        } else {
+            const newImg = ``;
+        }
     }
     fragment.append(newDiv);
     container.append(fragment);
