@@ -40,3 +40,11 @@ Organizzare i singoli membri in card/schede
 4. Nel ciclo for degli oggetti creo degli elementi html che aggiungo all'interno dei div, e assegno tramite interpolazione le stringhe di informazioni. 
 
 5. Aggiungo i div al frammento e aggiungo il frammento al container. 
+
+### BONUS1: 
+
+6. Aggiungo delle condizioni nel ciclo for dell'oggetto. Se la chiave è 'profile-picture' allora creo un elemento immagine a cui fornisco il path tramite interpolazione 
+
+### BONUS 2:
+
+7. 
