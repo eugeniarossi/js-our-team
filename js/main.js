@@ -30,8 +30,8 @@ function show() {
         }
         newArticle.append(newDiv);
         fragment.append(newCol);
-        container.append(fragment);
     }
+    container.append(fragment);
 }
 
 /************
